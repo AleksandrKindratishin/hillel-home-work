@@ -3,4 +3,4 @@
 
 const userName = prompt('What is your name?', 'John');
 
-const helloMessage = alert('Hello, ' + userName + '!');
+const helloMessage = alert('Hello, ' + userName + '! How are you?');
