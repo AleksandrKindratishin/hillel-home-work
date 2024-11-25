@@ -5,16 +5,20 @@
 // const array = [1, 3, 4, 6, 2, 5, 7];
 
 function removeElement(array, item) {
-    let result = [];
-    let index = 0;
+    let length = array.length;
 
-    for (const element of array) {
-        if (element !== item) {
-            result[index] = element;
-            index++
+    for (let i = 0; i < length; i++) {
+        if (array[i] === item) {
+            for (let j = i; j < length - 1; j++) {
+                array[j] = array[j + 1];
+            }
+            length--;
+            i--;
         }
     }
-    console.log(result);
+
+    array.length = length;
+    return array;
 }
 
-removeElement([1, 2, 3, 4], 3);
+console.log(removeElement([1, 2, 3, 4], 3));
