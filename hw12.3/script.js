@@ -27,3 +27,6 @@ taskList.addEventListener('click', (event) => {
         taskList.removeChild(li);
     }
 });
+
+let h1 = document.querySelector('h1');
+let li
