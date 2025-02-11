@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="script.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+    .weather-widget {
+      display: inline-block;
+      padding: 20px;
+      border-radius: 10px;
+      background: #3498db;
+      color: white;
+      font-size: 18px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .weather-widget img {
+      width: 50px;
+    }
+    .refresh-btn {
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: none;
+      background: #2ecc71;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Погода</h1>
+  <div class="weather-widget">
+    <h2 id="city">Місто</h2>
+    <p id="temperature">Температура: --°C</p>
+    <p id="description">Опис: --</p>
+    <img id="icon" src="" alt="Погода">
+    <p id="humidity">Вологість: --%</p>
+    <button class="refresh-btn" onclick="fetchWeather()">Оновити</button>
+  </div>
+</body>
+</html>
