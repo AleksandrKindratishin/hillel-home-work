@@ -1,5 +1,5 @@
 const API_KEY = "c5c9fe2920d836f0322686c903846bd9";
-const CITY = "Kyiv";
+const CITY = "Kyiv";y
 
 async function fetchWeather() {
     try {
